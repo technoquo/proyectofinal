@@ -1,0 +1,52 @@
+<div class="contacto">
+    <h2>Complete el siguiente formulario</h2>
+    <form action="/contacto" method="post">
+        <p>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" />
+        </p>
+        <p>
+            <label for="">Email</label>
+            <input type="text" name="email" />
+        </p>
+        <p>
+            <label for="">Teléfono</label>
+            <input type="text" name="tel" />
+        </p>
+        <p>
+            <label for="">Mensaje</label>
+            <textarea name="mensaje"></textarea>
+        </p>
+        <p><input type="submit" value="Enviar" /></p>
+
+    </form>
+    {{#if message}}
+    <p>{{message}}</p>
+    {{/if}}
+</div>
+<div class="redes">
+    <h2>Otras vias de contacto</h2>
+    <p>Tambien pueden contactarse con nosotros usando los siguientes medios:</p>
+    <div class="contactoredes">
+        <div>
+            <a class="icono" href="mailto:info@accesovisualcr.com">
+                <i class="fas fa-at"></i>
+            </a>
+            <a class="icono" class="contacto" href="https://www.facebook.com/accesovisualcr" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="icono" href="https://twitter.com/AccesoVisualCR" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            </a>
+            <a class="icono" href="https://www.instagram.com/accesovisualcr/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+
+            </a>
+        </div>
+
+
+    </div>
+</div>
